@@ -37,29 +37,41 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             expect(label).toEqual(true);
         });
 
+        it('TC-006 Label for image', function () {
+            const label = $(selectors.image).isDisplayed();
+            expect(label).toEqual(true);
+        });
+
     });
 
-    describe('Label are correct', function () {
+    describe('Labels are correct', function () {
 
-        it('TC-006 Label for name "1. What is your HERO\'s name?"', function () {
+        it('TC-007 Label for name "1. What is your Hero\'s name?"', function () {
             const text = $$(selectors.label)[0].getAttribute('title');
             expect(text).toEqual(expected.labelName);
         });
 
-        it('TC-007 Label for gender "2. Please choose a gender."', function () {
+        it('TC-008 Label for gender "2. Please choose a gender."', function () {
             const text = $$(selectors.label)[1].getAttribute('title');
             expect(text).toEqual(expected.labelGender);
         });
 
-        // it('TC-008 Label for age', function () {
-        //     const label = $$()[2].isDisplayed();
-        //     expect(label).toEqual(true);
-        // });
-        //
-        // it('TC-009 Label for story', function () {
-        //     const label = $$()[3].isDisplayed();
-        //     expect(label).toEqual(true);
-        // });
+        it('TC-008 Label for age  "3. How old is your Hero?"',function (){
+            const text = $$(selectors.label)[2].getAttribute('title');
+            expect(text).toEqual(expected.labelAge);
+        });
+
+        it('TC-009 Label for story = "4. What type of story would you like to read?"',function (){
+            const text = $$(selectors.label)[3].getAttribute('title');
+            expect(text).toEqual(expected.labelStory);
+        });
+
+
+        it('TC-009 Label for image = 5. Upload an image (optional).', function () {
+            const text = $(selectors.image).getAttribute('title');
+            expect(text).toEqual(expected.labelImage);
+        });
+
 
     });
 
