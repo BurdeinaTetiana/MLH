@@ -1,0 +1,10 @@
+{
+  "nameHero": "LadyBug",
+  "genderHero":{
+    "he": 0,
+    "she": 1,
+    "it": 2
+  },
+  "ageHero": 123,
+  "storyTypeHero": 6
+}

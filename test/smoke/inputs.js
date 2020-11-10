@@ -38,9 +38,14 @@ describe('Inputs', function () {
         });
 
         it('TC-020 Create', function () {
-            const create = $(selectors.label)[3].isDisplayed();
+            const create = $(selectors.create).isDisplayed();
             expect(create).toEqual(true);
         });
 
     });
+
+
+    describe('Placeholders are correct',function () {
+
+    })
 });

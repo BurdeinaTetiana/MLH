@@ -4,6 +4,9 @@
   "gender": ".ant-radio",
   "age": "#age",
   "story": ".ant-select-selector",
-  "image": "//label[@title='5. Upload an image (optional)']"
-
+  "image": "//label[@title='5. Upload an image (optional)']",
+  "create": ".ant-btn",
+  "tryAgain": ".btn-primary",
+  "storyClick": ".ant-select-show-arrow",
+  "storyType": ".ant-select-item-option"
 }
